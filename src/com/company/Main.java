@@ -16,9 +16,12 @@ public class Main {
         hashMap.put(new Car(4,"04KG 881 WIN"),new Data(2016,"Lexus",50000,"Black"));
         hashMap.put(new Car(5,"03KG 5678 JD"),new Data(2016,"Lexus",50000,"Black"));
 
+        method(hashMap);
+    }
+
+    private static void method(HashMap<Car, Data> hashMap) {
         for(HashMap.Entry elements : hashMap.entrySet()){
             System.out.println(elements.getKey() + " " + elements.getValue());
         }
-
     }
 }
